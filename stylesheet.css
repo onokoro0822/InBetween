@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-top {
+    text-align: center;
+}
+
+.header-under {
+    max-width: 1200px;
+    width: 100%;
+    float: left;
+    margin-right: 25px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-under a {
+    width: 20%;
+    line-height: 65px;
+    padding: 0 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.header-under a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.social-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px; /* アイコン間の隙間を調整 */
+}
+
+.social-icons a {
+    float: none; /* floatを無効にする */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* アイコンの背景のサイズ */
+    height: 40px; /* アイコンの背景のサイズ */
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* ホバー時の背景色 */
+    border-radius: 50%; /* 円形にするためのボーダー半径 */
+}
+
+.fa-brands {
+    font-size: 20px; /* アイコンのサイズを調整 */
+    color: white; /* アイコンの色を白に設定 */
+}
+
+.toplogo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.top-wrapper {
+    padding: 180px 15px 100px 15px;
+    background-image:url(../image/hennahito.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+    opacity: 1.0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: rgb(236, 173, 197);
+}
+
+.top-wrapper h2{
+    font-family: 'Comic Sans MS';
+    font-size:60px;
+}
+
+.top-wrapper p {
+    font-family: "Shippori Antique B1", sans-serif;
+    font-size:30px;
+    font-weight: 200;
+    color: white;
+}
+
+.chukan{
+    color: red;
+}
