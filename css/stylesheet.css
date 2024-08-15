@@ -5,6 +5,8 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
     font-family: "Hiragino Kaku Gothic ProN";
 }
 
@@ -21,6 +23,12 @@ a {
 
 .header-top {
     text-align: center;
+}
+
+.toplogo {
+    margin-top: 0; /* 上の余白をゼロに設定 */
+    padding-top: 0; /* 上のパディングをゼロに設定 */
+    display: block; /* 画像要素の場合、display:block;を指定してブロック要素にする */
 }
 
 .header-under {
