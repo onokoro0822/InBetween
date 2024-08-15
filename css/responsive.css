@@ -1,1 +1,5 @@
-
+@media all and (max-width: 670px) {
+    .header-under{
+        display: none;
+    }
+}
