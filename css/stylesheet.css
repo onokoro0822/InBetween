@@ -14,7 +14,7 @@ a {
 .container {
     max-width: 1200px;
     width: 100%;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     margin: 0 auto;
 }
 
@@ -46,6 +46,98 @@ a {
 
 .header-under a:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.h-u_smh{
+    max-width: 1200px;
+    width: 100%;
+    float: left;
+    margin-right: 25px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.openbtn{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background:darkblue !important;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+    border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    }
+
+
+.openbtn span:nth-of-type(1) {
+    top:15px; 
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(2) {
+    top:23px;
+    width: 35%;
+}
+
+.openbtn span:nth-of-type(3) {
+    top:31px;
+    width: 20%;
+}
+
+/*activeクラスが付与されると線が回転して×になる*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
+.menu {
+    display: none; /* デフォルトでは非表示 */
+    background-color: darkblue;
+    position: relative;
+    top: 50px; /* 必要に応じて調整 */
+    width: 100%;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu.active {
+    display: block; /* メニューが表示される */
 }
 
 
@@ -97,11 +189,13 @@ a {
     font-size: 70px;
     letter-spacing: 5px;
     color: rgb(236, 173, 197);
+    line-height: 2.5;
 }
 
 .top-wrapper h2{
     font-family: 'Comic Sans MS';
     font-size:60px;
+    line-height: 2;
 }
 
 .top-wrapper p {
@@ -113,4 +207,5 @@ a {
 
 .chukan{
     color: red;
+    line-height: 3;
 }
