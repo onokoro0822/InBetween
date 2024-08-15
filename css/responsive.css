@@ -15,8 +15,29 @@
     .menu a {
         padding: 15px 0; /* ボタンに余白を設定 */
     }
-    
+
     .menu a:first-child {
         padding-top: 20px; /* 必要に応じて余白のサイズを調整 */
+    }
+
+    .top-wrapper {
+        padding: 180px 0 100px 0;
+    }
+
+    .top-wrapper h1 {
+        font-size: 50px;
+        letter-spacing: 5px;
+        line-height: 2.5;
+    }
+    
+    .top-wrapper h2{
+        font-size:40px;
+        line-height: 2;
+    }
+    
+    .top-wrapper p {
+        font-size:20px;
+        font-weight: 200;
+        color: white;
     }
 }
