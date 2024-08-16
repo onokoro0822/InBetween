@@ -40,4 +40,12 @@
         font-weight: 200;
         color: white;
     }
+
+    .map .middle{
+        display: block;
+    }
+
+    .map .big{
+        display: none;
+    }
 }

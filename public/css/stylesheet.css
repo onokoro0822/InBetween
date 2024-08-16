@@ -217,3 +217,21 @@ a {
     color: red;
     line-height: 3;
 }
+
+.wakan{
+    font-size:30px;
+    font-weight: 800;
+    font-family: "Shippori Antique B1", sans-serif;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.howToAccess{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.map .middle{
+    display:none;
+}
